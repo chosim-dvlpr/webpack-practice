@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    // "useDefineForClassFields": true, // 클래스 필드 선언 시 ECMAScript 표준 따르도록 할 지
+    // "lib": ["ES2020", "DOM", "DOM.Iterable"], // 컴파일러가 포함할 라이브러리 파일을 지정 (target 설정에 따라 자동으로 지정되므로 안해도 될 듯)
+    "module": "ESNext",
+    "skipLibCheck": true, // 라이브러리 파일의 타입 검사를 생략할지 - 생략(true)하면 컴파일 속도 높임
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // 모듈 해석 방법 설정 (bundler와 호환되는 모듈 해석 방식으로 설정)
+    // "allowImportingTsExtensions": true, //  TypeScript 파일 확장자를 포함한 import를 허용 (.ts, .tsx)
+    "resolveJsonModule": true, // json 파일의 import 허용 - mock data에 사용할 듯
+    "isolatedModules": true, // 각 파일을 독립적으로 트랜스파일 => 빠른 빌드, 트랜스파일 오류 방지
+    // "noEmit": true, // 타입스크립트를 컴파일했을 때 JavaScript 변환 파일을 만들어 내지 않도록 하는 설정. 타입스크립트를 에디터 통합 기능을 제공하기 위한 도구 혹은 소스 코드 타입 체커로만 사용하게 됨
+    "jsx": "react-jsx", // React의 최신 JSX 변환 방식을 사용
+
+    /* Linting */
+    "strict": true, // 엄격한 타입-체킹 옵션을 활성화
+    "noUnusedLocals": true, // 사용되지 않는 지역 변수가 있다면 컴파일 오류 발생 시킴
+    "noUnusedParameters": true, // 사용되지 않는 매개 변수가 있다면 컴파일 오류를 발생 시킴
+    "noFallthroughCasesInSwitch": true // switch 문에서 의도하지 않은 fallthrough를 방지
+  },
+  "include": ["src", "webpack.config.js"]
+  // "references": [{ "path": "./tsconfig.node.json" }]
+}

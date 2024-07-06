@@ -1,0 +1,24 @@
+{
+  "name": "project-test",
+  "version": "0.0.1",
+  "description": "webpack 테스트입니다",
+  "main": "./src/index.tsx",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "html-webpack-plugin": "^5.6.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.3",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

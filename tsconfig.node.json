@@ -1,0 +1,14 @@
+// Node.js 환경에서의 설정
+
+// {
+//   "compilerOptions": {
+//     "composite": true, // 프로젝트가 컴포지트 프로젝트임을 나타냄
+//     "skipLibCheck": true, // 라이브러리 파일의 타입 검사를 생략
+//     "module": "ESNext", // 최신 ECMAScript 모듈 시스템 사용
+//     "moduleResolution": "bundler", // 번들러와 사용하기 위한 해석 방식
+//     "allowSyntheticDefaultImports": true, // CommonJS 모듈을 ES6 모듈처럼 사용할 수 있게 함
+//     "strict": true // 엄격한 타입-체킹 옵션을 활성화
+//   },
+//   "include": ["webpack.config.js"], // 포함할 파일을 지정 (Webpack 설정 파일)
+//   "exclude": ["node_modules"] // 제외할 디렉토리를 지정 (node_modules)
+// }
